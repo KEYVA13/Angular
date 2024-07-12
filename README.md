@@ -1,27 +1,20 @@
 # SeminarioAngular
+TEMATICA: Al observa el proyecto realizado durante el seminario por los profesores decidi realizar algo semilar para no salirme de la tematica propuesta,
+Opte por realiza una aplicacion de ventas de botines donde se separo en dos parte la parte de lista de los productos(botines) y la parte de compra(carrito).
+Ademas decidi agregarle dos secciones mas que son bastantes simples para poder aplicar el routeo en las seccion que aplico todo lo visto en clase es en Vestas
+las otras secciones solo las rellene un poco para no perder tiempo ya que estaba cursando las 4 materias de segundo año primer cuatrimestre y anduve muy justo
+con los tiempos, mas dos seminarios.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+Error:A ultimo momento vi que al agregar al carrito y cambiar de seccion y volver se me actualizaba la cantidad en la lista del botin q anterior mente ya hice la compra, hasta ultimo momento eso no pasaba,
+intente arreglarlo pero nose donde estara ese error se que tiene q ver con el arreglo principal q no queda como deberia quedar luego de realizar las compras. Luego todo 
+lo demas creo q esta super bien.
 
-## Development server
+Me gusto mucho el seminario muy entretenido y bien explicado, me hubiera gustado un par mas de clases profundizando algunos temas mas complejos como los de services, o 
+comunicacion de componentes ya que es bastante complicado para aprenderlo con tan poquitos videos lo doy como recomendacion todo lo demas muy bueno, saludoss.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Algo que queria comentar sobre el proyecto en stackblitz es que se ve bastante feo en pantalla chiquita agrandar para q se vea mejor, en mi computadora siempre se vio muy bien
+pero al subirdo a stackblitz el tamaño cambio.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Nombre Completo: Kevin Jorge Gonzalez Drake.
+Email: keilgonzalez4@gmail.com
+Sede: Tandil
