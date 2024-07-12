@@ -1,0 +1,27 @@
+<div class="container">
+    <h1 class="text-center text-primary">CARRITO</h1>
+    @for (loot of lootListBuy; track loot.name) {
+
+    }
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cant</th>
+          </tr>
+        </thead>
+        <tbody>
+            @for (loot of lootListBuy; track loot.name){
+                <tr>
+                    <td class="pt-4 fs-6">{{loot.name}}</td>
+                    <td class="pt-3 fs-4">{{loot.quantity}}</td>
+                </tr>
+            }@empty {
+                <tr>
+                    <td colspan="4" class="text-center">Realize una Compra</td>
+                </tr>
+            }  
+        </tbody>
+      </table>
+</div>

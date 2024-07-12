@@ -1,0 +1,46 @@
+<div class="container">
+    <h1 class="text-center text-primary">LISTA DE BOTINES</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Imagen</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Cant</th>
+            <th scope="col">Compra</th>
+          </tr>
+        </thead>
+        <tbody>
+            @for (loot of loots;track loot.name){
+                <tr [ngClass]="{'br border-3 border-success': loot.clearance }">
+                    <td><img [src]="loot.image" [alt]="loot.name" height="100" width="100" class="rounded border-secondary"></td>
+                    <td class="pt-4 fs-4">{{loot.name}}</td>
+                    <td class="pt-4 fs-4">{{loot.type}}</td>
+                    <td class="pt-4 fs-4" >{{loot.price | currency}}</td>
+                    @if (loot.stock > 0) {
+                        <td class="pt-4 fs-4 mt-4">{{loot.stock}}</td>
+                    }@else {
+                        <td class="badge text-bg-warning mt-4">Sin Stock</td>
+                    }
+
+                    @if (loot.stock > 0) {
+                         <td>
+                            <app-button-int [(quantity)]="loot.quantity" [max]="loot.stock"></app-button-int>
+                         </td>
+                         <td>
+                            <button type="button" class="btn btn-success mt-4" (click)="addCart(loot)">Buy</button>
+                         </td>
+                            
+                        }
+
+                  </tr>
+            }@empty {
+                <tr>
+                    <td colspan="4" class="text-center">No hay Botines para mostrar</td>
+                </tr>
+            }  
+        </tbody>
+      </table>
+</div>

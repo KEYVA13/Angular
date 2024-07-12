@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <div class="container">
+                <p class="fs-3 text-dark text-center">SOBRE MI</p>
+                <div class="row">
+                    <div class="col-auto">
+                      <img src="../assets/img/FotoPerfil.jpg" class="rounded-circle border border-4 border-primary" alt="FotoPerfil" width="250" height="250">
+                    </div>
+                    <div class="col">
+                      <p>Soy un joven deportista(Futbol, Atletismo, Gimnasio), enfocado en lograr sus objetivos y que no piensa parar hasta lograrlos, sin olvidar de donde vengo y viviendo cada día al máximo Sanamente.
+                        Cuando Tengo tiempo libre me gusta leer y salir a caminar.</p>
+                      <p>
+                        Tengo una habilidad innata para la comunicación y la colaboración efectiva me permite trascender en un entorno de equipo.
+                        Estoy convencido de que mi combinación de disciplina, adaptabilidad y pasión por la excelencia puede contribuir significativamente al éxito del equipo.
+                      </p>
+                      <p>
+                        *Resolución de problemas | Adaptabilidad | Gestión del tiempo | Liderazgo | Creatividad | Pensamiento crítico | Autodidacta.
+                      </p>
+                    </div>
+                  </div>
+                <div class="pt-4">
+                  <h3>Objetivo Profesional</h3>
+                  <p>Desarrollador apasionado en busca de oportunidades de trabajo o pasantías.
+                    Comprometido con el aprendizaje continuo, busco un entorno profesional que
+                    fomente el crecimiento y la contribución a proyectos significativos. Mi objetivo
+                    es aplicar mis habilidades, resolver desafíos y ser parte de un equipo dinámico
+                    que comparta mi pasión por la innovación. Entusiasta y motivado, estoy listo
+                    para aportar y aprender, contribuyendo al éxito de su empresa. ¡Espero con
+                    entusiasmo la oportunidad de ser parte de su equipo y avanzar juntos en la
+                    tecnología!</p>
+                </div>
+            </div>
+            
+        <p class="text-dark fs-3 text-center">ESTUDIOS</p>
+        <div class="container">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Institucion</th>
+                    <th scope="col">Fecha</th>
+                </tr>
+                </thead>
+                <tbody>
+                    @for (estudio of estudios; track $index) {
+                        <tr>
+                            <td>{{estudio.Titulo}}</td>
+                            <td>{{estudio.Institucion}}</td>
+                            <td>{{estudio.Fecha}}</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>            
+        </div>
+        <div class="col-3">
+            <div class="container">
+                <p class="text-center fs-3">HABILIDADES</p>
+            </div>
+            
+            @for (habilidad of habilidades; track $index) {
+                <div class="my-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                          {{habilidad}}
+                        </div>
+                      </div>
+                </div>
+            }
+            
+        </div>
+      </div>
+</div>
